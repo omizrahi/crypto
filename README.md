@@ -106,7 +106,7 @@ The payload is now ready for downstream operations such as decoding, storage, or
 
 The `NullCipher` is a cipher implementation that performs no encryption or decryption; it processes data by leaving it unchanged.
 
-In applications where encryption might be conditionally applied, using a `NullCipher` avoids the need to scatter conditional statements throughout the code. For example, for CRC decoys whose payloads are not encrypted, a `NullCipher` can be used while maintaining decoy-agnostic processing logic.
+In applications where encryption might be conditionally applied, using a `NullCipher` avoids the need to scatter conditional statements throughout the code.
 
 A NullCipher can be created via the `makeNullCipher` factory function defined in `crypto/cipherfactory.h`
 
